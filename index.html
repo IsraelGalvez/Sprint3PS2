@@ -4,11 +4,98 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./style.css">
+    <title>8a Commerce</title>
+    <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
-    
-    <script src="./script.js"></script>
+    <main class="main-container">
+        <header class="header">
+            <img src="img/menu-sandwich.png" alt="menu icon">
+            <img src="img/icon-placeHolder.png" alt="logo">
+
+            <nav class="navbar">
+                <ul class="navbar_items">
+                    <li><a class="navbar_link" href="#">Coleciones</a></li>
+                    <li><a class="navbar_link" href="#">Hombres</a></li>
+                    <li><a class="navbar_link" href="#">Mujeres</a></li>
+                    <li><a class="navbar_link" href="#">Acerca de</a></li>
+                    <li><a class="navbar_link" href="#">Contacto</a></li>
+                </ul>
+            </nav>
+
+            <!-- Modal navbar -->
+            <div class="modal-navbar_background">
+                <nav class="modal-navbar">
+                    <img class="modal-navbar_close.icon" src="img/icon-close_2.png" alt="icon close">
+                    <ul class="navbar_items">
+                        <li><a class="navbar_link" href="#">Coleciones</a></li>
+                        <li><a class="navbar_link" href="#">Hombres</a></li>
+                        <li><a class="navbar_link" href="#">Mujeres</a></li>
+                        <li><a class="navbar_link" href="#">Acerca de</a></li>
+                        <li><a class="navbar_link" href="#">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <!--  -->
+            <div class="header_carta-avatar">
+                <div class="header_cart">
+                    <div class="header_cart--notification">3</div>
+                    <img src="img/icon-carrito.png" alt="cart">
+                </div>
+                <img src="img/avatar-mujer.png" alt="icon woman">
+            </div>
+        </header>
+        <section class="content">
+            <article class="gallery">
+                <div class="gallery_image-container">
+                    <img class="gallery_previus" src="img/icon-previus.png" alt="icon previus">
+                    <img class="gallery_next" src="img/icon-close_2.png" alt="icon next">
+                </div>
+                <div class="galley_thumnails">
+                    <img id="1" class="galley_thumnail" src="" alt="thumnail">
+                    <img id="2" class="galley_thumnail" src="" alt="thumnail">
+                    <img id="3" class="galley_thumnail" src="" alt="thumnail">
+                    <img id="4" class="galley_thumnail" src="" alt="thumnail">
+                </div>
+            </article>
+
+            <article class="details">
+                <h2 class="details_company">8a comerce</h2>
+                <h2 class="details_tittle">Edicion limitada en playeras del necaxa</h2> 
+                <p class="details_description">Playeras del equipo, de la liga mexicana, Necaxa.</p>
+                <div class="details_prices">
+                    <p class="details_now">$1,500.00 <span class="details_discount">10%</span></p>
+                    <p class="details_before">$1,350.00</p>
+                </div>
+                <div class="details_product-quantity">
+                    <div class="input">
+                        <img class="input-minus" src="img/icon-minus.png" alt="icon minus">
+                        <input class="input-number" type="number" value="0">
+                        <img class="input-plus" src="img/icon-plus.png" alt="icon plus">
+                    </div>
+                    <button class="details_button"><img class="" src="img/icon-carrito.png" alt="icon cart"> Add to cart</button>
+                </div>
+            </article>
+        </section>
+
+        <!-- Cart modal -->
+        <div class="cart-modal">
+            <p class="cart-modal_tittle">Cart</p>
+            <div class="cart-modal_checkout-container">
+                <div class="cart-modal_details-container">
+                    <img src="" alt="img product">
+                    <div>
+                        <p class="cart-modal_product-container">Playera del Necaza edición limitada</p>
+                        <p class="cart-modal_price-container">$1,350.00 x 1 <span>$1,350.00</span></p>
+                    </div>
+                    <img class="cart-modal_delete" src="" alt="icon delete">
+                </div>
+                <button class="cart-modal_delete">Chekout</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
