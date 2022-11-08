@@ -1,0 +1,18 @@
+/* Error: There is no module with the namespace "varibles".
+ *    ,
+ * 10 |     font-family: varibles.$Font;
+ *    |                  ^^^^^^^^^^^^^^
+ *    '
+ *   sass\_initial.scss 10:18  @use
+ *   sass\style.scss 1:1       root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: 'Error: There is no module with the namespace "varibles".\a    \2577 \a 10 \2502      font-family: varibles.$Font;\d\a    \2502                   ^^^^^^^^^^^^^^\a    \2575 \a   sass\\_initial.scss 10:18  @use\a   sass\\style.scss 1:1       root stylesheet';
+}
