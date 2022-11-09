@@ -126,6 +126,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
+  z-index: 1;
 }
 .modal-navbar_items {
   display: flex;
@@ -186,6 +187,84 @@ body {
   .gallery_thumnail {
     display: block;
   }
+}
+
+.details {
+  border: 1px solid blue;
+  padding: 24px;
+}
+.details_company {
+  color: orange;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  letter-spacing: 1px;
+  margin-bottom: 12px;
+}
+.details_tittle {
+  font-size: 1.7em;
+  margin-bottom: 16px;
+}
+.details_description {
+  font-size: 0.94em;
+  color: rgb(0, 0, 77);
+  line-height: 24px;
+  margin-bottom: 24px;
+}
+.details_prices {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+  align-items: center;
+}
+.details_now {
+  font-size: 1.8em;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+.details_discount {
+  font-size: 0.5em;
+  background-color: hsl(25deg, 100%, 94%);
+  color: orange;
+  padding: 4px;
+  border-radius: 4px;
+}
+.details_before {
+  font-weight: 700;
+  color: hsl(219deg, 9%, 45%);
+  text-decoration: line-through;
+}
+
+.input {
+  border: 1px solid greenyellow;
+  height: 57px;
+  display: flex;
+  align-items: center;
+}
+.input_minus {
+  width: 25px;
+  padding: 24px 5px;
+}
+.input_minus:hover {
+  cursor: pointer;
+}
+.input_number {
+  width: 100%;
+  border: none;
+  background-color: rgb(228, 238, 252);
+  font-size: 1.2em;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  outline: none;
+}
+.input_plus {
+  width: 25px;
+  padding: 19px 3px;
+}
+.input_plus:hover {
+  cursor: pointer;
 }
 
 .main-container {
