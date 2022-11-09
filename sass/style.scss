@@ -1,15 +1,18 @@
 @use 'initial';
 @use 'variables';
 @use 'header';
+@use 'navbar';
+@use 'modal-navbar';
+@use 'mixins';
+@use 'gallery';
 
 .main-container{
     width: 375px;
     border: 1px solid black;
     margin: auto;
-}
-
-@media (min-width:1115px) {
-    .main-container{
+    position: relative;
+    @media (min-width:1115px) {
         width: 1115px;
     }
+  
 }

@@ -1,18 +1,203 @@
-/* Error: There is no module with the namespace "varibles".
- *    ,
- * 10 |     font-family: varibles.$Font;
- *    |                  ^^^^^^^^^^^^^^
- *    '
- *   sass\_initial.scss 10:18  @use
- *   sass\style.scss 1:1       root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: 'Error: There is no module with the namespace "varibles".\a    \2577 \a 10 \2502      font-family: varibles.$Font;\d\a    \2502                   ^^^^^^^^^^^^^^\a    \2575 \a   sass\\_initial.scss 10:18  @use\a   sass\\style.scss 1:1       root stylesheet';
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 68px;
+  padding: 0 24px;
+}
+@media (min-width: 1115px) {
+  .header {
+    height: 112px;
+    border-bottom: 1px solid rgb(97, 97, 97);
+  }
+}
+.header_navegation {
+  width: 175px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (min-width: 1115px) {
+  .header_navegation {
+    width: 590px;
+  }
+}
+.header_menu:hover {
+  cursor: pointer;
+}
+@media (min-width: 1115px) {
+  .header_menu {
+    display: none;
+  }
+}
+.header_cart-avatar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 70px;
+}
+@media (min-width: 1115px) {
+  .header_cart-avatar {
+    width: 125px;
+  }
+}
+.header_cart {
+  position: relative;
+}
+.header_cart--notification {
+  display: none;
+  background-color: orange;
+  width: 15px;
+  height: 12px;
+  border-radius: 16px;
+  position: absolute;
+  top: -2px;
+  right: -5px;
+  font-size: 0.6em;
+  text-align: center;
+  color: white;
+}
+.header_cart:hover {
+  cursor: pointer;
+}
+.header_avatar {
+  width: 24px;
+}
+@media (min-width: 1115px) {
+  .header_avatar {
+    width: 48px;
+  }
+}
+.header_avatar:hover {
+  cursor: pointer;
+  border: 2px solid orange;
+  border-radius: 50%;
+}
+
+.navbar {
+  display: none;
+  width: 500px;
+}
+.navbar_items {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+.navbar_link {
+  text-decoration: none;
+  color: rgb(32, 32, 109);
+  display: block;
+  height: 112px;
+  padding-top: 42px;
+}
+.navbar_link:hover {
+  border-bottom: 4px solid orange;
+}
+@media (min-width: 1115px) {
+  .navbar {
+    display: block;
+  }
+}
+
+.modal-navbar {
+  display: none;
+  background-color: white;
+  width: 250px;
+  height: 100%;
+  padding: 28px 24px;
+}
+.modal-navbar_background {
+  display: none;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.modal-navbar_items {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 200px;
+  list-style: none;
+  margin-top: 50px;
+}
+.modal-navbar_link {
+  text-decoration: none;
+  color: rgb(0, 12, 66);
+  font-weight: 700;
+  font-size: 1.1em;
+}
+.modal-navbar_close.icon:hover {
+  cursor: pointer;
+}
+
+.gallery_image-container {
+  border: 1px solid blueviolet;
+  height: 300px;
+  width: 100px;
+  background-image: url("../img/");
+  background-position-y: -35px;
+  background-size: cover;
+}
+.gallery_previus {
+  background-color: white;
+  width: 40px;
+  height: 40px;
+  padding: 12px;
+  border-radius: 50%;
+  position: absolute;
+  top: 170px;
+  left: 15px;
+}
+.gallery_previus:hover {
+  cursor: pointer;
+}
+.gallery_next {
+  background-color: white;
+  width: 40px;
+  height: 40px;
+  padding: 12px;
+  border-radius: 50%;
+  position: absolute;
+  top: 170px;
+  left: 320px;
+}
+.gallery_next:hover {
+  cursor: pointer;
+}
+.gallery_thumnail {
+  display: none;
+}
+@media (min-width: 1115px) {
+  .gallery_thumnail {
+    display: block;
+  }
+}
+
+.main-container {
+  width: 375px;
+  border: 1px solid black;
+  margin: auto;
+  position: relative;
+}
+@media (min-width: 1115px) {
+  .main-container {
+    width: 1115px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,25 @@
+@use 'mixins';
+@use 'variables';
+
+.gallery{
+    &_image-container{
+        border: 1px solid blueviolet;
+        height: 300px;
+        width: 100px;
+        background-image: url('../img/');
+        background-position-y: -35px;
+        background-size: cover;
+    }
+    &_previus{
+        @include mixins.image-btn(170px, 15px);
+    }
+    &_next{  
+        @include mixins.image-btn(170px, 320px);
+    }
+    &_thumnail{
+        display: none;
+        @media (min-width: 1115px) {
+            display: block;
+        }  
+    }
+}
