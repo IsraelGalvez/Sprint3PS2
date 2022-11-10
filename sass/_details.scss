@@ -2,7 +2,6 @@
 @use 'mixins' as m;
 
 .details{
-    border: 1px solid blue;
     padding: 24px;
     &_company{
         color: orange;
@@ -45,5 +44,29 @@
         font-weight: 700;
         color: hsl(219, 9%,45%);
         text-decoration: line-through;
+    }
+    &_button{
+        @include m.button;
+    }
+    @media (min-width:1115px) {
+        padding-top: 60px;
+        width: 446px;
+        &_tittle{
+            font-size: 2.7em;
+            margin-bottom: 48px;
+
+        }
+        &_description{
+            font-size: 0.9em;
+            margin-bottom: 37px;
+        }
+        &_prices{
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        &_product-quantity{
+            display: flex;
+            gap: 32px;
+        }
     }
 }
