@@ -115,7 +115,6 @@ body {
 }
 
 .modal-navbar {
-  display: none;
   background-color: white;
   width: 250px;
   height: 100%;
@@ -124,6 +123,7 @@ body {
 .modal-navbar_background {
   display: none;
   background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
   position: absolute;
   top: 0;
   left: 0;
@@ -403,8 +403,8 @@ body {
   width: 550px;
 }
 .modal-gallery_background {
-  display: none;
   background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
   position: absolute;
   top: 0;
   left: 0;
@@ -505,6 +505,13 @@ body {
 
 .show {
   display: block;
+}
+
+.cart-empty {
+  font-weight: 700;
+  text-align: center;
+  color: rgb(1, 0, 77);
+  margin-top: 30px;
 }
 
 /*# sourceMappingURL=style.css.map */

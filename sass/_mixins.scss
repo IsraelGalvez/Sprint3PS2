@@ -1,14 +1,15 @@
 @use "variables" as v;
 
 @mixin modal-background {
-  display: none;
   background-color: v.$Black;
+  backdrop-filter: blur(5px);
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   z-index: 1;
+  // display: none;
 }
 
 @mixin image-btn($top, $left, $showDesktop) {
