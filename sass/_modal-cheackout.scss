@@ -1,0 +1,13 @@
+@use "variables" as v;
+@use "mixins" as m;
+
+.cheackout-modal {
+    padding: 18px;
+  &_tittle {
+    font-size: 1.2em;
+    margin-bottom: 12px;
+  }
+  &_button {
+    @include m.button-checkout(32px, 100%, 0.9em);
+  }
+}

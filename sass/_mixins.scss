@@ -1,14 +1,15 @@
 @use "variables" as v;
 
 @mixin modal-background {
-  display: none;
   background-color: v.$Black;
+  backdrop-filter: blur(5px);
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   z-index: 1;
+  // display: none;
 }
 
 @mixin image-btn($top, $left, $showDesktop) {
@@ -61,6 +62,31 @@
     opacity: 0.5;
   }
 }
+
+@mixin button-checkout($height,$widht,$fS){
+  border: none;
+  border-radius: 8px;
+  width: $widht;
+  height: $height;
+  margin-top: 8px;
+  background-color: v.$jonquil;
+  font-family: v.$Font;
+  font-size: $fS;
+  font-weight: 700;
+  &:hover{
+    cursor: pointer;
+    opacity: 0.5;
+  }
+}
+
+// Box shadows
+@mixin box-shadow($shadow...) {
+  -webkit-box-shadow: $shadow;
+     -moz-box-shadow: $shadow;       
+          box-shadow: $shadow;
+}
+
+@mixin a {}
 
 @mixin svgSize {
   width: 15%;

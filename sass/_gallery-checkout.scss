@@ -1,0 +1,34 @@
+@use "variables" as v;
+@use "mixins" as m;
+
+.gallery_checkout {
+  display: flex;
+  justify-content: center;
+  &_tittle {
+    display: none;
+    justify-content: center;
+    &-name {
+      font-weight: 700;
+      font-size: 1.8em;
+      color: orange;
+    }
+    &-deselect {
+      color: rgb(18, 46, 107);
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    @media (min-width: 1115px) {
+      display: flex;
+    }
+  }
+  &_container {
+    width: 100%;
+    display: flex;
+    gap: 25px;
+    &_image{
+        background-size: cover;
+        width: 100px;
+    }
+  }
+}

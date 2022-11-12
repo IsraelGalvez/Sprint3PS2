@@ -9,6 +9,12 @@
 @use 'input';
 @use 'modal-cart';
 @use 'modal-gallery';
+@use 'header-checkout';
+@use 'gallery-checkout';
+@use 'modal-cheackout';
+@use 'details-checkout';
+@use 'darkMode';
+@use 'input-checkout';
 
 .main-container{
     width: 375px;
@@ -31,4 +37,11 @@
 
 .show{
     display: block;
+}
+
+.cart-empty{
+    font-weight: 700;
+    text-align: center;
+    color: rgb(1, 0, 77);
+    margin-top: 30px;
 }

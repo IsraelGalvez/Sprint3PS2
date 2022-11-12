@@ -2,8 +2,8 @@
 @use 'mixins';
 
 .modal-navbar{
-    display: none;
     &_background{
+        display: none;
         @include mixins.modal-background;
     }
     background-color: white;
