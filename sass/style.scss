@@ -9,6 +9,12 @@
 @use 'input';
 @use 'modal-cart';
 @use 'modal-gallery';
+@use 'header-checkout';
+@use 'gallery-checkout';
+@use 'modal-cheackout';
+@use 'details-checkout';
+@use 'darkMode';
+@use 'input-checkout';
 
 .main-container{
     width: 375px;

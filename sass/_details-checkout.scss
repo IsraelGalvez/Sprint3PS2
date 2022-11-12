@@ -1,0 +1,34 @@
+@use 'variables' as v;
+@use 'mixins' as m;
+
+.details_checkout{
+    padding: 12px;
+    width: 100%;
+    display: relative;
+    @include m.box-shadow(2px 2px 2px rgba(#ccc, .8), -2px -2px 2px rgba(#ccc, 0.8));
+    background-color: rgb(247, 247, 247);
+    border-radius: 8px;
+    &_product-name{
+        color: orange;
+        height: 50px;
+        margin-bottom: 24px;
+    }
+/*     &_prices{
+    } */
+    &_quantity{}
+    &_button-add{
+        @include m.button-checkout(25px, 25%, 0.7em);
+    }
+    &_button-delete{
+        @include m.button-checkout(25px, 25%, 0.7em);
+    }
+}
+
+.box-pay{
+    position: relative;
+    margin-top: 24px;
+    &_text{
+       font-weight: 700;
+       font-size: 1.3em;
+    }
+}

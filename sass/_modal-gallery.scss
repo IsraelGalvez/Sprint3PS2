@@ -21,6 +21,7 @@
         }
     }
     &_image-container{
+        background-color: #252525;
         background-image: url('../img/image-article_1-min.png');
         height: 550px;
         background-size: cover;
@@ -36,6 +37,8 @@
         @include m.image-btn(190px, 520px, true);
     }
     &_thumnails{
+        background-color: #252525;
+        border-radius: 16px;
         display: flex;
         justify-content: space-between;
         width: 450px;

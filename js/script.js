@@ -120,6 +120,13 @@ closeNav.addEventListener('click', ()=>{
   contNav.style.display = 'none';
 });
 
+//Cambiar a modo nocturno y viceversa
+/* let darkToggle = document.querySelector('#darkToggle');
+
+darkToggle.addEventListener('change', ()=> {
+  document.body.classList.toggle('dark');
+}) */
+
 //Funciones
 function deleteProduct() {
   //Borrar el contenido del carrito

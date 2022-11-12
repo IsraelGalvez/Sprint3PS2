@@ -1,0 +1,31 @@
+@use 'variables' as v;
+@use 'mixins' as m;
+
+/* .darkToggle {
+    appearance: none;
+    width: 30px;
+    height: 30px;
+    background: #EDEDED;
+    border-radius: 4px;
+    border: 2px solid #555;
+}
+  
+.darkToggle:checked {
+    background: #252525;
+}
+  
+.dark{
+    color: white;
+    background: #252525;
+}
+
+.darker{
+    @media (min-width:1115px) {
+        content: url('../img/logo_light-1.png');
+    }}
+
+.darker:checked{
+    @media (min-width:1115px) {
+        content: url('../img/logo_dark-1.png');
+    }
+} */
