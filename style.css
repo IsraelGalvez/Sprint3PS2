@@ -495,13 +495,8 @@ body {
   border: 2px solid rgb(255, 125, 19);
 }
 
-.gallery_checkout {
-  display: flex;
-  justify-content: center;
-}
 .gallery_checkout_tittle {
-  display: none;
-  justify-content: center;
+  padding: 4px;
 }
 .gallery_checkout_tittle-name {
   font-weight: 700;
@@ -510,27 +505,94 @@ body {
 }
 .gallery_checkout_tittle-deselect {
   color: rgb(18, 46, 107);
+  font-size: 0.8em;
+  margin: 10px;
+  display: none;
 }
 .gallery_checkout_tittle-deselect:hover {
   cursor: pointer;
 }
 @media (min-width: 1115px) {
-  .gallery_checkout_tittle {
-    display: flex;
+  .gallery_checkout_tittle-deselect {
+    display: block;
   }
 }
 .gallery_checkout_container {
+  -webkit-box-shadow: 2px 2px 2px rgba(204, 204, 204, 0.8), -2px -2px 2px rgba(204, 204, 204, 0.8);
+  -moz-box-shadow: 2px 2px 2px rgba(204, 204, 204, 0.8), -2px -2px 2px rgba(204, 204, 204, 0.8);
+  box-shadow: 2px 2px 2px rgba(204, 204, 204, 0.8), -2px -2px 2px rgba(204, 204, 204, 0.8);
+  background-color: rgb(247, 247, 247);
+  padding: 12px;
   width: 100%;
+  border-radius: 8px;
+}
+.gallery_checkout_container_art {
+  display: relative;
   display: flex;
   gap: 25px;
 }
-.gallery_checkout_container_image {
+.gallery_checkout_container_art_image {
   background-size: cover;
   width: 100px;
 }
+.gallery_checkout_container_prices_product-name {
+  color: orange;
+  height: 50px;
+  margin-bottom: 24px;
+  font-size: 1.1em;
+}
+.gallery_checkout_button-add {
+  border: none;
+  border-radius: 8px;
+  width: 25%;
+  height: 25px;
+  margin-top: 8px;
+  background-color: #f4d03f;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.7em;
+  font-weight: 700;
+}
+.gallery_checkout_button-add:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+.gallery_checkout_button-delete {
+  border: none;
+  border-radius: 8px;
+  width: 25%;
+  height: 25px;
+  margin-top: 8px;
+  background-color: #f4d03f;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.7em;
+  font-weight: 700;
+}
+.gallery_checkout_button-delete:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+.gallery_checkout_box-pay {
+  position: relative;
+  margin-top: 24px;
+}
+.gallery_checkout_box-pay_text {
+  font-weight: 700;
+  font-size: 1.3em;
+}
+@media (min-width: 1115px) {
+  .gallery_checkout {
+    width: 100%;
+  }
+}
 
 .cheackout-modal {
+  display: block;
   padding: 18px;
+}
+@media (min-width: 1115px) {
+  .cheackout-modal {
+    display: none;
+  }
 }
 .cheackout-modal_tittle {
   font-size: 1.2em;
@@ -552,61 +614,13 @@ body {
   opacity: 0.5;
 }
 
-.details_checkout {
-  padding: 12px;
-  width: 100%;
-  display: relative;
-  -webkit-box-shadow: 2px 2px 2px rgba(204, 204, 204, 0.8), -2px -2px 2px rgba(204, 204, 204, 0.8);
-  -moz-box-shadow: 2px 2px 2px rgba(204, 204, 204, 0.8), -2px -2px 2px rgba(204, 204, 204, 0.8);
-  box-shadow: 2px 2px 2px rgba(204, 204, 204, 0.8), -2px -2px 2px rgba(204, 204, 204, 0.8);
-  background-color: rgb(247, 247, 247);
-  border-radius: 8px;
-  /*     &_prices{
-      } */
+.pay_checkout {
+  margin: 24px;
 }
-.details_checkout_product-name {
-  color: orange;
-  height: 50px;
-  margin-bottom: 24px;
-}
-.details_checkout_button-add {
-  border: none;
-  border-radius: 8px;
-  width: 25%;
-  height: 25px;
-  margin-top: 8px;
-  background-color: #f4d03f;
-  font-family: "Montserrat", sans-serif;
-  font-size: 0.7em;
-  font-weight: 700;
-}
-.details_checkout_button-add:hover {
-  cursor: pointer;
-  opacity: 0.5;
-}
-.details_checkout_button-delete {
-  border: none;
-  border-radius: 8px;
-  width: 25%;
-  height: 25px;
-  margin-top: 8px;
-  background-color: #f4d03f;
-  font-family: "Montserrat", sans-serif;
-  font-size: 0.7em;
-  font-weight: 700;
-}
-.details_checkout_button-delete:hover {
-  cursor: pointer;
-  opacity: 0.5;
-}
-
-.box-pay {
-  position: relative;
-  margin-top: 24px;
-}
-.box-pay_text {
-  font-weight: 700;
-  font-size: 1.3em;
+@media (min-width: 1115px) {
+  .pay_checkout {
+    width: 100%;
+  }
 }
 
 /* .darkToggle {
@@ -683,6 +697,14 @@ body {
 
 @media (min-width: 1115px) {
   .content {
+    display: flex;
+    padding: 90px 50px;
+    gap: 124px;
+  }
+}
+
+@media (min-width: 1115px) {
+  .content_checkout {
     display: flex;
     padding: 90px 50px;
     gap: 124px;

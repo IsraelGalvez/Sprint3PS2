@@ -12,7 +12,7 @@
 @use 'header-checkout';
 @use 'gallery-checkout';
 @use 'modal-cheackout';
-@use 'details-checkout';
+@use 'pay_checkout';
 @use 'darkMode';
 @use 'input-checkout';
 
@@ -32,6 +32,14 @@
         padding: 90px 50px;
         gap: 124px;
         
+    }
+}
+
+.content_checkout{
+    @media (min-width:1115px) {      
+        display: flex;
+        padding: 90px 50px;
+        gap: 124px;
     }
 }
 
