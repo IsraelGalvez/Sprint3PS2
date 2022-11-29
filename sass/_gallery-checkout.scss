@@ -2,33 +2,66 @@
 @use "mixins" as m;
 
 .gallery_checkout {
-  display: flex;
-  justify-content: center;
   &_tittle {
-    display: none;
-    justify-content: center;
+    padding: 4px;
     &-name {
       font-weight: 700;
       font-size: 1.8em;
-      color: orange;
+      color: v.$Grey-blue;
     }
     &-deselect {
       color: rgb(18, 46, 107);
+      font-size: 0.8em;
+      margin: 10px;
+      display: none;
       &:hover {
         cursor: pointer;
       }
-    }
-    @media (min-width: 1115px) {
-      display: flex;
+      @media (min-width: 1115px) {
+        display: block;
+      }
     }
   }
-  &_container {
+  &_container{
+    @include m.box-shadow(2px 2px 2px rgba(#ccc, .8), -2px -2px 2px rgba(#ccc, 0.8));
+    background-color: rgb(247, 247, 247);
+    padding: 12px;
     width: 100%;
-    display: flex;
-    gap: 25px;
-    &_image{
+    border-radius: 8px;
+    &_art{
+      display: relative;
+      display: flex;
+      gap: 25px;
+      &_image{
         background-size: cover;
         width: 100px;
+      }
     }
+    &_prices{
+      &_product-name{
+        color: orange;
+        height: 50px;
+        margin-bottom: 24px;
+        font-size: 1.1em
+      }
+    }
+  }
+  
+  &_button-add{
+    @include m.button-checkout(25px, 25%, 0.7em);
+  }
+  &_button-delete{
+    @include m.button-checkout(25px, 25%, 0.7em);
+  }
+  &_box-pay{
+    position: relative;
+    margin-top: 24px;
+    &_text{
+      font-weight: 700;
+      font-size: 1.3em;
+    }
+  }
+  @media (min-width:1115px) {
+    width: 100%;
   }
 }

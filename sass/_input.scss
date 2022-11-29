@@ -7,14 +7,15 @@
     align-items: center;
     border-radius: 8px;
     padding-bottom: 4px;
-    background-color: rgb(222, 244, 255);
+    background-color: rgb(224, 224, 224);
+    margin-bottom: 12px;
     &_minus{
         @include m.changeNumber(24px, 5px);
     }
     &_number{
         width: 100%;
         border: none;
-        background-color: rgb(222, 244, 255);
+        background-color: rgb(224, 224, 224);
         font-size: 1.2em;
         font-weight: 700;
         font-family: v.$Font;

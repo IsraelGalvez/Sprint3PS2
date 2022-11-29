@@ -174,4 +174,3 @@ function changePreviusImage(imgContainer) {
   }
   imgContainer.style.backgroundImage = `url('../img/image-article_${imgIndex}-min.png')`;
 }
-

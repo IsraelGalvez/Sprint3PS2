@@ -4,7 +4,7 @@
 .details{
     padding: 24px;
     &_company{
-        color: orange;
+        color: v.$Grey-blue;
         text-transform: uppercase;
         font-size: 0.8em;
         letter-spacing: 1px;
@@ -35,8 +35,8 @@
     }
     &_discount{
         font-size: 0.5em;
-        background-color: v.$Pale-orange;
-        color: orange;
+        background-color: rgb(199, 199, 199);
+        color: v.$Grey-blue;
         padding: 4px;
         border-radius: 4px;
     }

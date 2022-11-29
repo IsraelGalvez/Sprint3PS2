@@ -1,0 +1,9 @@
+@use "variables" as v;
+@use "mixins" as m;
+
+.pay_checkout {
+  margin: 24px;
+  @media (min-width: 1115px) {
+    width: 100%;
+  }
+}
