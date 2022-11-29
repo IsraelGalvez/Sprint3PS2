@@ -30,7 +30,7 @@
         border-radius: 16px;
         &:hover{
             cursor: pointer;
-            border: 2px solid rgb(255, 125, 19);
+            border: 2px solid variables.$Grey-blue;
         }
     }
     @media (min-width:1115px) {

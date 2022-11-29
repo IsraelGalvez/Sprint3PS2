@@ -69,7 +69,7 @@ body {
 }
 .header_cart--notification {
   display: none;
-  background-color: orange;
+  background-color: rgb(97, 97, 97);
   width: 15px;
   height: 12px;
   border-radius: 16px;
@@ -93,7 +93,7 @@ body {
 }
 .header_avatar:hover {
   cursor: pointer;
-  border: 2px solid orange;
+  border: 2px solid rgb(97, 97, 97);
   border-radius: 50%;
 }
 
@@ -114,7 +114,7 @@ body {
   padding-top: 42px;
 }
 .navbar_link:hover {
-  border-bottom: 4px solid orange;
+  border-bottom: 4px solid rgb(97, 97, 97);
 }
 @media (min-width: 1115px) {
   .navbar {
@@ -218,7 +218,7 @@ body {
 }
 .gallery_thumnail:hover {
   cursor: pointer;
-  border: 2px solid rgb(255, 125, 19);
+  border: 2px solid rgb(97, 97, 97);
 }
 @media (min-width: 1115px) {
   .gallery {
@@ -236,7 +236,7 @@ body {
   padding: 24px;
 }
 .details_company {
-  color: orange;
+  color: rgb(97, 97, 97);
   text-transform: uppercase;
   font-size: 0.8em;
   letter-spacing: 1px;
@@ -267,8 +267,8 @@ body {
 }
 .details_discount {
   font-size: 0.5em;
-  background-color: hsl(25deg, 100%, 94%);
-  color: orange;
+  background-color: rgb(199, 199, 199);
+  color: rgb(97, 97, 97);
   padding: 4px;
   border-radius: 4px;
 }
@@ -278,7 +278,7 @@ body {
   text-decoration: line-through;
 }
 .details_button {
-  background-color: rgb(255, 115, 0);
+  background-color: rgb(148, 148, 148);
   width: 100%;
   height: 57px;
   border-radius: 8px;
@@ -324,7 +324,8 @@ body {
   align-items: center;
   border-radius: 8px;
   padding-bottom: 4px;
-  background-color: rgb(222, 244, 255);
+  background-color: rgb(224, 224, 224);
+  margin-bottom: 12px;
 }
 .input_minus {
   width: 25px;
@@ -336,7 +337,7 @@ body {
 .input_number {
   width: 100%;
   border: none;
-  background-color: rgb(222, 244, 255);
+  background-color: rgb(224, 224, 224);
   font-size: 1.2em;
   font-weight: 700;
   font-family: "Montserrat", sans-serif;
@@ -389,7 +390,7 @@ body {
   cursor: pointer;
 }
 .cart-modal_checkout {
-  background-color: rgb(255, 115, 0);
+  background-color: rgb(148, 148, 148);
   width: 100%;
   height: 57px;
   border-radius: 8px;
@@ -431,7 +432,7 @@ body {
 }
 .modal-gallery_close:hover {
   cursor: pointer;
-  fill: orange;
+  fill: rgb(97, 97, 97);
 }
 .modal-gallery_image-container {
   background-color: #252525;
@@ -492,7 +493,7 @@ body {
 }
 .modal-gallery_thumnail:hover {
   cursor: pointer;
-  border: 2px solid rgb(255, 125, 19);
+  border: 2px solid rgb(97, 97, 97);
 }
 
 .gallery_checkout_tittle {
@@ -501,7 +502,7 @@ body {
 .gallery_checkout_tittle-name {
   font-weight: 700;
   font-size: 1.8em;
-  color: orange;
+  color: rgb(97, 97, 97);
 }
 .gallery_checkout_tittle-deselect {
   color: rgb(18, 46, 107);
